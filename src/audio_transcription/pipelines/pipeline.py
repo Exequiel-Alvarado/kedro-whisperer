@@ -3,7 +3,7 @@ from kedro.pipeline import Pipeline, node
 from audio_transcription.nodes.reduce_noise import int_noise_reduction
 from audio_transcription.nodes.transcribe_audio import pri_transcription
 
-
+ 
 def create_pipeline(**kwargs):
     return Pipeline(
         nodes=[
